@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client-eureka-provider-a" />
+        <module name="client-eureka-provider-b" />
+        <module name="client-feign-consumer-a" />
+        <module name="client-ribbon-consumer-a" />
+        <module name="server-config-master" />
+        <module name="server-eureka-master" />
+        <module name="server-eureka-slave" />
+        <module name="server-eureka-slave2" />
+        <module name="server-gateway-master" />
+        <module name="server-zuul-master" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server-master" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-eureka-provider-a" options="-parameters" />
+      <module name="client-eureka-provider-b" options="-parameters" />
+      <module name="client-feign-consumer-a" options="-parameters" />
+      <module name="client-ribbon-consumer-a" options="-parameters" />
+      <module name="config-server-master" options="-parameters" />
+      <module name="server-config-master" options="-parameters" />
+      <module name="server-eureka-master" options="-parameters" />
+      <module name="server-eureka-slave" options="-parameters" />
+      <module name="server-eureka-slave2" options="-parameters" />
+      <module name="server-gateway-master" options="-parameters" />
+      <module name="server-zuul-master" options="-parameters" />
+    </option>
+  </component>
+</project>
